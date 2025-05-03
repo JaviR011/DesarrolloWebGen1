@@ -1,0 +1,53 @@
+
+/* === Modelo de caja === */
+.tarjeta {
+    width: 70%;                     /* Anchura del 80% del contenedor padre */
+    margin: 20px auto;              /* 20px arriba/abajo y centrado horizontalmente */
+    padding: 15px;                  /* Espacio interior */
+    border: 2px solid #333;         /* Borde gris oscuro */
+    background-color: #f9f9f9;      /* Color de fondo claro */
+    box-shadow: 2px 2px 8px #aaa;   /* Sombra para efecto flotante */
+   /* border-radius: 25px 10px 15px 1px; */        /* Bordes redondeados */
+}
+  
+  /* === Selectores === */
+  #principal {
+    color: darkblue;                /* Aplica a título con ID "principal" */
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;                /* Todos los <p> */
+  }
+  
+  /* === Pseudo-elementos === */
+  p::first-line {
+    font-weight: bold;             /* Solo la primera línea del párrafo */
+  }
+  
+  p::before {
+    content: "📝 ";                /* Agrega un emoji antes del párrafo */
+  }
+  
+  /* === Pseudo-clases === */
+  a:hover {
+    color: red;                    /* Cambia de color al pasar el mouse por encima */
+  }
+  
+  input:focus {
+    border: 2px solid blue;        /* Borde azul cuando el input está activo */
+  }
+  
+  /* === Layout responsivo con media query === */
+  @media (max-width: 600px) {
+    .tarjeta {
+      width: 95%;                  /* En pantallas pequeñas, usar casi todo el ancho */
+      font-size: 14px;             /* Texto más pequeño */
+    }
+  
+    #principal {
+      font-size: 20px;             /* Título más pequeño también */
+    }
+  }
+  

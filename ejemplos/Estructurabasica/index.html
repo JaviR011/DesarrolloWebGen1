@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- Indica al navegador que este archivo es un documento HTML5 -->
+<html lang="es"> <!-- Comienza el documento HTML y especifica que está en español -->
+<head> <!-- Sección de configuración del documento (no visible directamente) -->
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <title>Mi Primera Página Web</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlaza la hoja de estilos externa CSS -->
+</head>
+
+<body> <!-- Cuerpo del documento, lo que se muestra en la página web -->
+
+  <header> <!-- Encabezado del sitio web -->
+    <h1>Bienvenido a Mi Sitio Web</h1> <!-- Título principal visible en la página -->
+    <nav> <!-- Barra de navegación -->
+      <ul> <!-- Lista no ordenada -->
+        <li><a href="https://www.google.com">Inicio</a></li> <!-- Elemento de lista con enlace -->
+        <a href="https://www.google.com" target="_blank">Ir a Google</a> <!-- Enlace que abre Google en una nueva pestaña -->
+        <li><a href="hoja.html">Acerca</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> <!-- Contenido principal del sitio -->
+    <section> <!-- Sección sobre el sitio -->
+      <h2>Sobre Nosotros</h2> <!-- Título secundario -->
+      <p>Este es un párrafo dentro de una etiqueta <code>&lt;section&gt;</code>. Aquí explicamos el propósito del sitio web.</p>
+    </section>
+
+    <section> <!-- Sección del formulario -->
+      <h2>Formulario de Contacto</h2> <!-- Título del formulario -->
+
+      <form> <!-- Formulario para enviar información -->
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..."><br> <!-- Campo de texto para nombre -->
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"><br> <!-- Campo para correo -->
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Escribe tu mensaje..."></textarea><br> <!-- Área de texto -->
+
+        <input type="submit" value="Enviar"> <!-- Botón para enviar el formulario -->
+      </form>
+
+  <!-- BLOQUE QUE MUESTRA EL CÓDIGO COMO TEXTO -->
+<h3>¿Cómo se creó este formulario?</h3> <!-- Subtítulo para introducir el código fuente que se va a mostrar -->
+
+<pre><code> <!-- Etiquetas combinadas para mostrar código preservando el formato:
+      - <pre> mantiene espacios, saltos de línea y sangrías como se escriben.
+      - <code> le da semántica y formato de "código fuente". -->
+
+&lt;form&gt;  <!-- Muestra literalmente <form>, gracias al uso de &lt; y &gt; -->
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt; <!-- Muestra una etiqueta de formulario -->
+  &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt; <!-- Muestra un campo de texto y salto de línea -->
+
+  &lt;label for="email"&gt;Correo:&lt;/label&gt; <!-- Etiqueta para el campo de correo -->
+  &lt;input type="email" id="email" name="email"&gt;&lt;br&gt; <!-- Campo de entrada tipo email y salto de línea -->
+
+  &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;&lt;br&gt; <!-- Etiqueta para el área de texto -->
+  &lt;textarea id="mensaje" name="mensaje"&gt;&lt;/textarea&gt;&lt;br&gt; <!-- Área de texto multilinea + salto -->
+
+  &lt;input type="submit" value="Enviar"&gt; <!-- Botón de envío del formulario -->
+&lt;/form&gt;  <!-- Cierre del formulario -->
+</code></pre> <!-- Fin del bloque de código. Aquí los símbolos especiales hacen que no se interpreten como HTML -->
+
+  </main>
+
+  <footer> <!-- Pie de página -->
+    <p>&copy; 2025 Mi Sitio Web</p> <!-- Mensaje de derechos de autor -->
+  </footer>
+
+  
+</body>
+</html>

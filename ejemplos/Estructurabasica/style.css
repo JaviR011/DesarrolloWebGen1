@@ -1,0 +1,94 @@
+/* Estilo global del cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;     /* Fuente del texto */
+  margin: 0;                          /* Elimina los márgenes por defecto del navegador */
+  padding: 0;                         /* Elimina el relleno (padding) */
+  background-color: #f3f3f3;          /* Color de fondo gris claro */
+}
+
+/* Estilos para la cabecera del sitio */
+header {
+  background-color: #333;             /* Fondo gris oscuro */
+  color: white;                       /* Texto blanco */
+  padding: 10px 20px;                 /* Relleno interior: 10px arriba/abajo, 20px izq/der */
+}
+
+/* Título principal dentro del header */
+header h1 {
+  margin: 0;                          /* Elimina márgenes por defecto */
+}
+
+/* Lista de navegación dentro del nav */
+nav ul {
+  list-style-type: none;             /* Quita los puntos de la lista */
+  padding: 0;                         /* Elimina el padding por defecto */
+}
+
+/* Cada elemento de la lista (li) en la barra de navegación */
+nav ul li {
+  display: inline;                    /* Muestra los elementos en línea horizontal */
+  margin-right: 15px;                /* Espacio entre enlaces */
+}
+
+/* Enlaces dentro de la barra de navegación */
+nav ul li a {
+  color: white;                       /* Color de texto blanco */
+  text-decoration: none;             /* Quita el subrayado */
+}
+
+/* Área principal del contenido */
+main {
+  padding: 20px;                      /* Relleno alrededor del contenido */
+  background-color: white;           /* Fondo blanco */
+}
+
+/* Cada sección del contenido */
+section {
+  margin-bottom: 30px;               /* Espacio inferior entre secciones */
+}
+
+/* Campos del formulario: texto y área de texto */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;                       /* Ancho completo del contenedor */
+  padding: 8px;                      /* Relleno interior para mayor legibilidad */
+  margin-top: 5px;                   /* Espacio superior */
+  margin-bottom: 15px;               /* Espacio inferior entre campos */
+}
+
+/* Botón de enviar del formulario */
+form input[type="submit"] {
+  background-color: #4CAF50;         /* Verde medio */
+  color: white;                      /* Texto blanco */
+  padding: 10px 25px;                /* Espaciado interno */
+  border: none;                      /* Sin borde */
+  cursor: pointer;                   /* Cambia el cursor al pasar encima */
+}
+
+/* Efecto hover al pasar el mouse sobre el botón */
+form input[type="submit"]:hover {
+  background-color: #45a049;         /* Verde más oscuro para el efecto hover */
+}
+
+/* Pie de página */
+footer {
+  text-align: center;                /* Centra el texto */
+  background-color: #333;            /* Fondo oscuro igual que el header */
+  color: white;                      /* Texto blanco */
+  padding: 10px;                     /* Espaciado interior */
+}
+
+/* Estilo del bloque que muestra el código HTML como texto */
+pre {
+  background-color: #f0f0f0;       /* Fondo gris claro para diferenciar el bloque */
+  padding: 10px;                   /* Espaciado interior */
+  border-left: 5px solid #ccc;     /* Línea lateral izquierda tipo resaltado */
+  overflow-x: auto;                /* Scroll horizontal si el código es largo */
+}
+
+/* Estilo específico del texto dentro de bloques de código */
+code {
+  font-family: "Courier New", monospace; /* Fuente de tipo monoespaciada para mejor lectura */
+  font-size: 14px;                        /* Tamaño del texto */
+}

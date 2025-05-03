@@ -1,0 +1,44 @@
+/* Aplicamos el modelo de caja universal con border-box */
+* {
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho/alto total */
+    padding: 0;             /* Quitamos relleno por defecto */
+    margin: 0;              /* Quitamos márgenes por defecto */
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* === MODELO DE CAJA: CONTENIDO + PADDING + BORDER + MARGIN === */
+  .caja-ejemplo {
+    width: 300px;              /* Ancho de la caja */
+    height: 150px;             /* Alto de la caja */
+    padding: 20px;             /* Espacio interno entre contenido y borde */
+    border: 5px solid blue;    /* Borde sólido azul de 5px */
+    margin: 30px auto;         /* Separación externa + centrado horizontal */
+    background-color: lightyellow;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  /* === BORDES PERSONALIZADOS INDIVIDUALMENTE === */
+  .caja-redonda {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px auto;
+    border-top-style: dotted;      /* Estilo de borde superior: punteado */
+    border-right-style: solid;     /* Estilo de borde derecho: sólido */
+    border-bottom-style: dashed;   /* Estilo inferior: guiones */
+    border-left-style: double;     /* Estilo izquierdo: doble línea */
+    border-width: 5px;
+    border-color: red;
+    border-radius: 20px;           /* Esquinas redondeadas */
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
