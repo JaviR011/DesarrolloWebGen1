@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Define que este documento es HTML5 -->
+<html lang="es"> <!-- Comienza el documento HTML y especifica el idioma español -->
+<head>
+  <meta charset="UTF-8"> <!-- Define el conjunto de caracteres como UTF-8 (soporta acentos y ñ) -->
+  <title>Ejemplos de Formularios</title> <!-- Título de la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlaza un archivo CSS externo para estilos -->
+</head>
+<body> <!-- Cuerpo del documento, donde va todo el contenido visible -->
+
+  <h1>📄 Formularios en HTML</h1> <!-- Título principal de la página -->
+
+  <!-- Formulario de Login -->
+  <section class="form-section"> <!-- Sección con clase para agrupar estilos -->
+    <h2>🔐 Inicio de Sesión</h2> <!-- Subtítulo de la sección -->
+
+    <form> <!-- Comienza un formulario -->
+      <label for="usuario">Usuario:</label> <!-- Etiqueta del campo, asociada al input con id "usuario" -->
+      <input type="text" id="usuario" name="usuario" placeholder="Escribe tu nombre aquí" required > 
+      <!-- Campo de texto, obligatorio. 
+           id: usado para enlazar con el label.
+           name: se usa como clave para enviar este valor al servidor. -->
+
+      <label for="clave">Contraseña:</label>
+      <input type="password" id="clave" name="clave" value="contraseña" required>
+      <!-- Campo de tipo contraseña (oculta caracteres).
+           También es obligatorio con required. -->
+
+      <input type="submit" value="Ingresar" >
+      <!-- Botón de envío del formulario.
+           value: es el texto que aparecerá en el botón. -->
+    </form>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section class="form-section">
+    <h2>📧 Formulario de Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" >
+      <!-- name="nombre": clave que se usará al enviar este dato -->
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email">
+      <!-- Campo de tipo email, validará que haya un formato tipo usuario@dominio -->
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      <!-- Área de texto multi-línea.
+           rows="4": define la altura del cuadro en líneas visibles.
+           name="mensaje": clave con la que se enviará el texto. -->
+
+      <input type="submit" value="Enviar Mensaje">
+    </form>
+  </section>
+
+  <!-- Encuesta -->
+  <section class="form-section">
+    <h2>📊 Encuesta</h2>
+    <form>
+      <p>¿Qué tan satisfecho estás con este sitio?</p>
+
+      <!-- Cada input de tipo radio comparte el mismo name, eso hace que solo se pueda seleccionar uno -->
+      <label>
+        <input type="radio" name="satisfaccion" value="1"> Poco satisfecho
+      </label><br>
+      <label>
+        <input type="radio" name="satisfaccion" value="2"> Satisfecho
+      </label><br>
+      <label>
+        <input type="radio" name="satisfaccion" value="3"> Muy satisfecho
+      </label><br>
+      <!-- name="satisfaccion": todos pertenecen al mismo grupo.
+           value="X": es lo que se envía si se selecciona esa opción. -->
+
+      <p>¿Qué temas te interesan más?</p>
+      <!-- Los checkboxes permiten seleccionar varias opciones al mismo tiempo -->
+      <label>
+        <input type="checkbox" name="tema" value="html"> HTML
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="css"> CSS
+      </label>
+      <label>
+        <input type="checkbox" name="tema" value="js"> JavaScript
+      </label><br>
+      <!-- Todos tienen el mismo name, lo cual no es lo más recomendable para checkboxes.
+           Idealmente debería ser name="tema[]" para manejar múltiples selecciones. -->
+
+      <input type="submit" value="Enviar Encuesta">
+    </form>
+  </section>

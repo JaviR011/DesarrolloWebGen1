@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 1. Selector de etiqueta */
+    p {
+      color: blue;
+    }
+
+    /* 2. Selector de clase */
+    .rojo {
+      color: red;
+    }
+
+    /* 3. Selector de ID */
+    #parrafo-especial {
+      color: green;
+    }
+
+    /* 4. Selector de pseudoclase */
+    #parrafo-especial:hover {
+      color: orange;
+    }
+
+    /* 5. Selector con !important */
+    .override {
+      color: purple !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Este párrafo será azul (por selector de etiqueta) -->
+  <p>Texto normal (solo etiqueta)</p>
+
+  <!-- Será rojo (clase sobre etiqueta) -->
+  <p class="rojo">Texto con clase</p>
+
+  <!-- Será verde (ID sobre clase) -->
+  <p id="parrafo-especial" class="rojo">Texto con ID (gana ID sobre clase)</p>
+
+  <!-- Será morado porque tiene !important -->
+  <p class="rojo override" id="parrafo-especial">Texto con clase override</p>
+
+  <!-- Será negro por el estilo en línea (gana incluso sobre ID) -->
+  <p id="parrafo-especial" class="rojo override" style="color: black;">Texto con style=""</p>
+
+</body>
+</html>
